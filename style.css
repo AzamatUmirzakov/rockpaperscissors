@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("assets/fonts/OpenSans-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(45deg, red, purple);
+  background-repeat: no-repeat;
+}
+
+header {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header div {
+  text-align: center;
+}
+header div p {
+  font-size: 30px;
+  color: white;
+  font-family: "Open Sans";
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header div p:last-child {
+  margin-top: 10px;
+  border-bottom: none;
+}
+
+div.content {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+div.content div {
+  overflow: hidden;
+}
+div.content div ul {
+  font-family: "Open Sans";
+  transition: all 0.3s ease-in-out;
+  list-style: none;
+}
+div.content div ul li > span {
+  font-size: 90px;
+  color: white;
+}
+div.content ul.comp-slider-items > li {
+  text-align: right;
+}
+
+div.choose-buttons {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+div.choose-buttons button {
+  width: 130px;
+  padding: 20px 0;
+  background: transparent;
+  border: 3px solid black;
+  color: white;
+  font-family: "Open Sans";
+  outline: none;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+div.choose-buttons button:active {
+  animation: darken 1s;
+}
+
+@keyframes darken {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@media (max-height: 540px) {
+  div.content {
+    margin-top: 50px;
+  }
+
+  div.choose-buttons {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 945px) {
+  div.choose-buttons {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
