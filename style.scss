@@ -76,6 +76,9 @@ div.choose-buttons {
     &:active {
       animation: darken 1s;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

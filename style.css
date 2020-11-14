@@ -77,6 +77,9 @@ div.choose-buttons button {
 div.choose-buttons button:active {
   animation: darken 1s;
 }
+div.choose-buttons button:hover {
+  cursor: pointer;
+}
 
 @keyframes darken {
   from {
